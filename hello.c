@@ -8,4 +8,13 @@ int main()
     printf("Age: %d\n", age);
     printf("Height: %.2f\n", height);
     printf("Letter: %c\n", letter);
+
+    if (age > 18)
+    {
+        printf("You are an adult.\n");
+    }
+    else
+    {
+        printf("You are a minor.\n");
+    }
 }
