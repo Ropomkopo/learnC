@@ -1,4 +1,4 @@
-#include "calculator_logic.h"
+#include "calculator_logic_v1.h"
 #include <stdio.h>
 
 CalcResult calculate(double a, double b, char op) {
@@ -23,6 +23,9 @@ CalcResult calculate(double a, double b, char op) {
     break;
   case '%':
     result.value = (int)a % (int)b;
+    break;
+  case '^':
+    result.value = a * a * a;
     break;
   default:
     result.status = ERROR_INVALID_OPERATOR;
