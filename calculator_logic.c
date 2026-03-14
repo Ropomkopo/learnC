@@ -21,6 +21,9 @@ CalcResult calculate(double a, double b, char op) {
       result.value = a / b;
     }
     break;
+  case '%':
+    result.value = (int)a % (int)b;
+    break;
   default:
     result.status = ERROR_INVALID_OPERATOR;
     break;
